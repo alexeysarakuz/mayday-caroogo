@@ -1064,7 +1064,8 @@ animation__button */
           ) {
             let st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
             if (st > lastScrollTop) {
-              if (filter[0] < 100) {
+              console.log(filter[0]);
+              if (filter[0] < 25) {
                 filter[0] = filter[0] + 0.2;
                 filter[1] = filter[1] + 0.05;
 
